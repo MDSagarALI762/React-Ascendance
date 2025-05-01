@@ -6,7 +6,7 @@ import circle2 from '../../assets/images/Ellipse 50.png'
 import img2 from '../../assets/images/Ellipse 3500.png'
 const Boost = () => {
     return (
-        <div className="bg-[#012555] py-10 my-16">
+        <div className="bg-[#012555] pb-10 pt-4 md:py-10 mb-16">
             <div className="grid grid-cols-1 md:grid-cols-12
               gap-1  w-11/12 mx-auto">
 
@@ -24,9 +24,10 @@ const Boost = () => {
 </div>
 {/**text description */}
 <div className="flex col-span-6 relative
- order-1 md:order-2 flex-col gap-10 items-center ">
+ order-1 md:order-2 flex-col gap-2 md:gap-10 items-center ">
     <div className='w-full'>
-    <img className='float-end md:w-[51.66px] md:h-[51.66px] w-[37.87px] h-[37.87px]' src={circle2} alt="" />
+    <img className='float-end md:w-[51.66px] md:h-[51.66px] 
+    w-[37.87px] h-[37.87px]' src={circle2} alt="" />
 
     </div>
 <div className=" flex flex-col gap-4">
@@ -59,7 +60,7 @@ Boost Your College <br></br>
    
             </div>
     <img className='absolute md:block hidden  top-114 right-25' src={img2} alt="" />
-    <img className='absolute block md:hidden  top-147 z-0 right-2' src={img2} alt="" />
+    <img className='absolute block md:hidden  top-133 z-0 right-2' src={img2} alt="" />
             
             </div>
            </div>

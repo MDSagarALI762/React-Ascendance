@@ -5,7 +5,7 @@ const Banner = () => {
       <div style={{background:'linear-gradient(to top, #F8F9F4), #FFFFFF00'}}
        className="relative bg-[#F7F8F9] md:pb-24 pb-[150px] pt-16 overflow-hidden">
         {/* Top-right label */}
-        <div className="absolute top-[540px] left-3 md:top-20 md:left-270">
+        <div className="absolute top-[450px] left-3 md:top-20 md:left-270">
           <button className="bg-[#BADFFA]  md:text-[16px] text-[10.29px]
            text-[#1C1C1C] border border-[#3FAEFF] rounded-r-full
             rounded-bl-full md:px-6 md:py-2 py-1 px-4 shadow-md
@@ -21,7 +21,7 @@ const Banner = () => {
           </button>
         </div>
         <img className='mr-20 absolute md:h-[61.5px] md:w-[171.px] w-[122.7px] h-[44px]
-          md:top-90 md:left-280 top-[490px] left-8 ' src={img1} alt="" />
+          md:top-90 md:left-280 top-[400px] left-12 ' src={img1} alt="" />
         <img className='left-54 absolute   hidden md:block 
          bottom-36 ' src={img2} alt="" />
   
@@ -44,7 +44,7 @@ const Banner = () => {
           </p>
   
           {/* Buttons */}
-          <div className="mt-10 md:flex justify-center items-center gap-6">
+          <div className="md:mt-10 mt-8 md:flex justify-center items-center gap-6">
             <button className="bg-[#04364A] text-white  font-semibold rounded-full 
             md:px-10 md:py-3 py-2  px-12 hover:bg-[#032c3f] transition">
               SUBSCRIBE

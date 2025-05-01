@@ -28,7 +28,7 @@ const HomeLayout = () => {
          <Boost></Boost>
         <div className="hidden md:block"> <LearnInvest></LearnInvest>
         </div>
-        <div className="block md:hidden">
+        <div className="block md:hidden mb-10">
             <SMLearnInvest></SMLearnInvest>
             <SMLearnInvestCard></SMLearnInvestCard>
         </div>

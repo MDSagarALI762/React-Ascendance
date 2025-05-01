@@ -12,7 +12,7 @@ import img7 from '../../assets/images/podium 1.png'
 
 const Potential = () => {
     return (
-        <div className=" bg-[#F6F7F2] pb-24">
+        <div className=" bg-[#F6F7F2] pb-14 md:pb-24">
             
             <div className="md:grid grid-cols-13 pt-10 md:pt-24 pb-12 gap-4 w-11/12 mx-auto">
 <div className="hidden md:block col-span-6 md:mt-16 "> 
@@ -45,11 +45,11 @@ const Potential = () => {
 {/**small device center image with circle + speaeker */}
 <div className="col-span-4 block md:hidden relative md:mt-0 mt-7">
 <img className='w-full relative z-10' src={img1} alt="" />
-<div className='absolute top-50 right-50 w-[77px] h-[77px]  z-20 transform translate-y-8 translate-y-10 bg-white rounded-full p-5 shadow-2xl'>
+<div className='absolute top-70 right-70 w-[77px] h-[77px]  z-20 transform translate-y-8 translate-y-10 bg-white rounded-full p-5 shadow-2xl'>
 <img className='w-[45.97px] h-[32.62px]' src={speaker} alt="" />
 
 </div>
-<img className='absolute top-52 z-0 right-43 ' src={circle3} alt="" />
+<img className='absolute top-72 z-0 right-63' src={circle3} alt="" />
 
 </div>
 {/**Right image */}
@@ -61,7 +61,7 @@ const Potential = () => {
         <img key={i} src={circle2} alt={`circle-${i}`} className="mb-2" />
   ))}
   </div>
-  <div className='space-y-3 absolute right-3'>
+  <div className='space-y-3 absolute md:right-3 right-23'>
 {[...Array(12)].map((_, i) => (
     
         <img key={i} src={circle2} alt={`circle-${i}`} className="mb-2" />
@@ -74,7 +74,7 @@ const Potential = () => {
             </div>
 
             {/**component footer */}
-            <div className='w-11/12 mx-auto mt-16'>
+            <div className='w-11/12 mx-auto mt-4 md:mt-16'>
 <div className='md:grid md:grid-cols-12 gap-6 md:block hidden'>
     {/**comprehensive challanges */}
 <div className='col-span-3 flex items-center'>
@@ -130,7 +130,7 @@ Gamified Learning Experience
 border-2 p-2">
 <img className='min-w-[22px] max-[22px] min-h-[22px] max-h-[22px]' src={img7} alt="" />
 </div>
-<p className='ps-2 flex-2'>
+<p className='ps-2 flex-2 -mt-6'>
 Comprehensive Challenges with Exclusive Rewards & Prizes
 </p> 
 <div className="divider lg:divider-horizontal"></div>
@@ -141,24 +141,24 @@ Comprehensive Challenges with Exclusive Rewards & Prizes
 border-2 p-2">
 <img className='min-w-[22px] max-[22px] min-h-[22px] max-h-[22px] ' src={img4} alt="" />
 </div>
-<p className='ps-2'>
+<p className='ps-2 -mt-6'>
 Educational Content Curated By Lvy League Students
 </p> 
 <div className="divider lg:divider-horizontal"></div>
 </div>
 {/**supportive community */}
-<div className='col-span-3 flex items-center'>
+<div className='col-span-3 flex items-center mt-4'>
 <div className="bg-white -mt-16  border-[#D4D7C8] rounded-full 
 border-2 p-2">
 <img className='min-w-[22px] max-[22px] min-h-[22px] max-h-[22px]' src={img5} alt="" />
 </div>
-<p className='ps-2'>
+<p className='ps-2 -mt-6'>
 Supportive community to Encourage Learning
 </p> 
 <div className="divider lg:divider-horizontal"></div>
 </div>
 {/**gamifed learn */}
-<div className='col-span-3 flex items-center'>
+<div className='col-span-3 flex items-center mt-4'>
 <div className="bg-white -mt-16  border-[#D4D7C8] rounded-full 
 border-2 p-2">
 <img className='min-w-[22px] max-[22px] min-h-[22px] max-h-[22px]' src={img6} alt="" />

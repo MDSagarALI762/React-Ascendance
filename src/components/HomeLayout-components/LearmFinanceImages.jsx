@@ -14,7 +14,7 @@ import img12 from '../../assets/images/Frame 1405.png';
 const LearnFinanceImages = () => {
     return (
         <div>
-        <div className="relative  mt-16 h-115 animate-marquee">
+        <div className="relative md:mt-6  mt-0 h-115 animate-marquee">
             <div className="flex gap-6 mt-8 absolute flex-shrink-0">
                 <img className= 'object-cover' src={img1} alt="" />
                 <img className='mt-4 object-cover' src={img2} alt="" />

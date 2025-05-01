@@ -77,7 +77,7 @@ const SMDPartnershipCard = () => {
     return (
         <div className="w-11/12 mx-auto text-center mt-7">
              {/* Card */}
-             <div className="relative h-64 transition-all duration-300">
+             <div className="relative h-80 transition-all duration-300">
                {cards[activeIndex].component}
              </div>
        
