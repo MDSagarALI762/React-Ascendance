@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import img1 from '../../assets/images/Vector 1.png'
 import img2 from '../../assets/images/Vector 2.png'
 const Banner = () => {
@@ -21,7 +22,7 @@ const Banner = () => {
           </button>
         </div>
         <img className='mr-20 absolute md:h-[61.5px] md:w-[171.px] w-[122.7px] h-[44px]
-          md:top-90 md:left-280 top-[400px] left-12 ' src={img1} alt="" />
+          md:top-90 md:left-260 top-[400px] left-12 ' src={img1} alt="" />
         <img className='left-54 absolute   hidden md:block 
          bottom-36 ' src={img2} alt="" />
   
@@ -49,10 +50,11 @@ const Banner = () => {
             md:px-10 md:py-3 py-2  px-12 hover:bg-[#032c3f] transition">
               SUBSCRIBE
             </button>
-            <button className="border mt-4 border-[#000] text-black font-semibold 
+           <Link to='/theventure'> <button className="border mt-4 border-[#000] text-black font-semibold 
              rounded-full md:px-14 md:py-3 px-16 py-2 hover:bg-gray-100 transition">
               LOGIN
             </button>
+            </Link>
           </div>
          <div className='absolute md:-left-205 md:top-100 top-3 right-1'>
          <button className="bg-[#E1AF7E]  text-[#1C1C1C] md:text-[16px] text-[10.8px]

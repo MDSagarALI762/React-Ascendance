@@ -4,6 +4,7 @@ import img3 from '../../assets/images/image (5).png'
 import img5 from '../../assets/images/image (8).png'
 import img6 from '../../assets/images/image (9).png'
 import img7 from '../../assets/images/image (10).png'
+import Marquee from 'react-fast-marquee'
 
 
 const Student = () => {
@@ -17,7 +18,8 @@ const Student = () => {
             Students Launch their Start-Up & Finance Stories
          </h2>  
          {/**cards */}
-         <div className="flex gap-4 mt-16 animate-marquee">
+         <Marquee direction='left'>
+         <div className="flex gap-4 mt-16">
             {/**Card 1 */}
             <div className=" min-w-[459.6px]  max-w-[459.6px] h-[213.57px]  flex gap-4 border-1 border-[#FF922E] py-4 pr-6 ps-4 rounded">
 <div className='flex-1' >
@@ -75,8 +77,10 @@ const Student = () => {
             </div>
 
          </div>
+         </Marquee>
 
-   {/**card row 2 */}    
+   {/**card row 2 */} 
+   <Marquee direction='right'>   
    <div className="flex  gap-4 mt-4 animate-marquee">
     {/**card 5 */}
     <div className=" min-w-[459.6px] max-w-[459.6px] h-[213.57px] flex gap-4  border-1 border-[#FF922E] p-4 pr-6  rounded">
@@ -135,6 +139,7 @@ const Student = () => {
         
 
     </div>  
+    </Marquee>
         </div>
     );
 };

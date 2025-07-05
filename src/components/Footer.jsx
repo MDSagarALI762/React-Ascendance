@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="md:grid grid-cols-12 justify-center
              items-center pt-8 ps-2  md:p-8 md:ps-14">
             <div className="col-span-5">
-            <h2 className="text-[20px] md:text-[30px] text-white 
+            <h2 className="text-[20px] md:text-[30px]  text-white 
              font-bold">Kickstart your journey with Ascendance Venture
             </h2>  
                 </div>

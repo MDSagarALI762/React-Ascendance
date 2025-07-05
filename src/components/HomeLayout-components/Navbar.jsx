@@ -1,3 +1,5 @@
+
+import { Link } from 'react-router-dom';
 import img1 from '../../assets/images/image_468__1_-removebg-preview (1) 2.png'
 
 const Navbar = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
         {/* Menu items for large screens */}
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal text-[16px] px-1 md:space-x-6">
-            <li><a>Login</a></li>
+          <Link to='/theventure'><li>Login</li></Link>
             <li>
               <a className='bg-[#062A44] py-2 px-8 text-white font-semibold rounded-full'>
                 Subscribe
@@ -35,7 +37,7 @@ const Navbar = () => {
               </svg>
             </div>
             <ul tabIndex={0} className="menu   menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
-              <li  className='flex  justify-end'><a>Login</a></li>
+              <li  className='flex  justify-end'><Link to='/theventure'>Login</Link></li>
               <li>
                 <a className='bg-[#062A44] py-2 mt-6 px-8 text-white font-semibold rounded-full'>
                   Subscribe

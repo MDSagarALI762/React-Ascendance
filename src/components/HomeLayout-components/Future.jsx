@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Marquee from 'react-fast-marquee';
 
 const Future = () => {
   const [futureImages,setFutureImages] = useState([]);
 
   const imgButtonText =[
  
-  "Tasnia","KAL S","Ahmed ali","Ola","Olivia" ,
-   "Jesina", "Smith K", "David", "CHan lee"
+  "TASNIA","KAL S","AHMED ALI","OLA","OLIVIA" ,
+   "JESNIA", "SMITH K", "DAVID", "CHAN LEE"
     
   ];
   useEffect(()=>{
@@ -31,8 +32,9 @@ fetch('FutureImage.json')
             md:py-3 py-2 w-full md:w-[164px] md:px-8 text-[16px] mt-4 mb-10  md:my-8">Subscribe</button> 
       </div>
       {/**Future section image */}
-      <div className="flex flex-col gap-6  animate-marquee">
+      <div className="flex flex-col gap-6 max-w-[375px] md:max-w-none">
   {/* First Row */}
+  <Marquee direction="left">
   <div className="flex gap-6 justify-center">
     {futureImages.slice(0, 5).map((futureImage, index) => (
       <div key={futureImage.id} className="flex-shrink-0 relative group
@@ -53,8 +55,10 @@ fetch('FutureImage.json')
       </div>
     ))}
   </div>
+  </Marquee>
 
   {/* Second Row */}
+  <Marquee direction="right">
   <div className="flex gap-6 justify-center">
     {futureImages.slice(5, 9).map((futureImage, index) => (
       <div key={futureImage.id} className="flex-shrink-0 relative group hover:border-purple-600 
@@ -74,22 +78,10 @@ hover:border-4">
       </div>
     ))}
   </div>
+  </Marquee>
 </div>
-        {/* Inline Style for Animation *1*/}
-        <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(100%);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-        .animate-marquee {
-          animation: marquee 30s linear infinite;
-        }
-      `}</style>
 
+       
 
         </div>
     );

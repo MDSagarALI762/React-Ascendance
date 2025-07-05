@@ -20,10 +20,13 @@ import Student from "../components/HomeLayout-components/Student";
 
 const HomeLayout = () => {
     return (
-        <div>
+        <div className="w-full max-w-screen-xl mx-auto">
+            <header>
          <Navbar></Navbar> 
+         </header>
+         <main>
          <Banner></Banner>
-         <LearnFinance></LearnFinance> 
+         <LearnFinance></LearnFinance>
          <Potential></Potential> 
          <Boost></Boost>
         <div className="hidden md:block"> <LearnInvest></LearnInvest>
@@ -34,10 +37,13 @@ const HomeLayout = () => {
         </div>
          <City></City>
          <Partnership></Partnership>
-         <Student></Student>
+        <Student></Student>
          <Journey></Journey>
-         <Future></Future>
+        <Future></Future>
+         </main>
+         <footer>
          <Footer></Footer>
+         </footer>
         </div>
     );
 };

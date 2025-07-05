@@ -54,14 +54,14 @@ const Potential = () => {
 </div>
 {/**Right image */}
 <div className="col-span-3 pt-16 md:pt-8 relative">
-<div className=' flex gap-3 ms-6  md:ms-8 '>
+<div className=' flex gap-3 ms-6  md:ms-5 '>
 {[...Array(12)].map((_, i) => (
     
     
         <img key={i} src={circle2} alt={`circle-${i}`} className="mb-2" />
   ))}
   </div>
-  <div className='space-y-3 absolute md:right-3 right-23'>
+  <div className='space-y-3 absolute md:right-2 right-23'>
 {[...Array(12)].map((_, i) => (
     
         <img key={i} src={circle2} alt={`circle-${i}`} className="mb-2" />
