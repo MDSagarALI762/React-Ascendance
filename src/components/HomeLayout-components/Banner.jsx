@@ -22,7 +22,7 @@ const Banner = () => {
           </button>
         </div>
         <img className='mr-20 absolute md:h-[61.5px] md:w-[171.px] w-[122.7px] h-[44px]
-          md:top-90 md:left-260 top-[400px] left-12 ' src={img1} alt="" />
+          md:top-90 md:left-250 top-[400px] left-12 ' src={img1} alt="" />
         <img className='left-54 absolute   hidden md:block 
          bottom-36 ' src={img2} alt="" />
   
